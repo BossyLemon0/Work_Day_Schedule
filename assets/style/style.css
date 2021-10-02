@@ -7,7 +7,7 @@ body {
   textarea {
     background: transparent;
     border: none;
-    /* resize: none; */
+    resize: none;
     color: #000000;
     border-left: 1px solid black;
     padding: 10px;
@@ -39,9 +39,13 @@ body {
   }
   
   .hour {
+    display:flex;
     background-color: #ffffff;
     color: #000000;
     border-top: 1px dashed #000000;
+    flex-wrap: wrap;
+    width: 61.82px;
+    
   }
   
   .past {
