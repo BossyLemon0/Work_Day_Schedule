@@ -1,11 +1,19 @@
 var toDay = $("#currentDay");
-// var
+var textArea = $("textarea");
+var time = moment().hour();
+var app = $("#nineam");
+var btn = $(".saveBtn")
 // var
 // var
 // var
 // var
 // var
 
+localStorage.setItem('9am', app.val());
+app.append(localStorage.getItem('9am'));
+
+
+console.log(btn);
 //mental note: use the jquery functions because the js doesn't work w/o it for some reason
 
 /*
@@ -27,9 +35,29 @@ function currentDay(){
 
 }
 
-function blank(){
+function saveText(){
     
+    if(time == textArea[0].name){
+        
+        $(textArea[0]).addClass("present");
+    }
+
+    if(time > textArea[1].name){
+      
+          $(textArea[1]).addClass("");
+    }
+
+    if(time < textArea[2].name){
+        
+         $(textArea[2]).addClass("future");
+    }
+
+
 }
+
+$(btn).on("click", function(){
+    console.log("hey");
+  });
 
 function blank(){
     
@@ -43,11 +71,13 @@ function blank(){
     
 }
 
-function blank(){
-    
-}
+
+
+
+
 
 currentDay();
+saveText();
 
 /*
 GIVEN I am using a daily planner to create a schedule

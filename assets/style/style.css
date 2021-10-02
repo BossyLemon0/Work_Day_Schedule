@@ -7,10 +7,12 @@ body {
   textarea {
     background: transparent;
     border: none;
-    resize: none;
+    /* resize: none; */
     color: #000000;
     border-left: 1px solid black;
     padding: 10px;
+    width: 1000px;
+    height: 90px;
   }
   
   .jumbotron {
@@ -63,6 +65,7 @@ body {
     border-bottom-right-radius: 15px;
     background-color: #06aed5;
     color: white;
+    height: 90px;
   }
   
   .saveBtn i:hover {
